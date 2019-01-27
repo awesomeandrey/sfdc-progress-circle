@@ -1,0 +1,13 @@
+<aura:component implements="force:appHostable" access="global">
+    <lightning:layout horizontalAlign="space">
+        <lightning:layoutItem padding="around-large" class="slds-box slds-theme_default">
+            <c:ProgressCircle progress="10" size="small" tooltip="This is small version."/>
+        </lightning:layoutItem>
+        <lightning:layoutItem padding="around-large" class="slds-box slds-theme_default">
+            <c:ProgressCircle progress="35" size="medium" tooltip="This is medium version." variant="success"/>
+        </lightning:layoutItem>
+        <lightning:layoutItem padding="around-large" class="slds-box slds-theme_default">
+            <c:ProgressCircle progress="80" size="large" tooltip="This is large version."/>
+        </lightning:layoutItem>
+    </lightning:layout>
+</aura:component>	

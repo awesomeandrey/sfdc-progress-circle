@@ -1,17 +1,26 @@
-<aura:component>
+<aura:component description="ProgressCircle">
 
-    <aura:attribute name="progress" type="Decimal" default="0" required="true"
-                    description="Progress percentage value"/>
-    <aura:attribute name="variant" type="String" default="brand"
+    <aura:attribute name="progress" 
+                    type="Decimal" 
+                    default="0" 
+                    required="true"
+                    description="Progress value."/>
+    <aura:attribute name="variant" 
+                    type="String" 
+                    default="brand"
                     description="Circle stroke color theme. Allowed options: brand, success."/>
-    <aura:attribute name="size" type="Decimal" default="3.5"
-                    description="SVG container size in REM."/>
-    <aura:attribute name="tooltip" type="Object" default=""
-                    description="Progress circle tooltip"/>
+    <aura:attribute name="size" 
+                    type="String" 
+                    default="medium"
+                    description="Component size. Allowed options: small, medium, large."/>
+    <aura:attribute name="tooltip" 
+                    type="String" 
+                    default=""
+                    description="Tooltip text."/>
 
-    <div class="container" aura:id="container">
+    <div class="progress-circle-container" aura:id="container">
         <aura:if isTrue="{!not(empty(v.tooltip))}">
-            <div class="tooltip slds-popover slds-popover_tooltip slds-nubbin_bottom-left">
+            <div class="tooltip slds-popover slds-popover_tooltip slds-nubbin_bottom-left" data-size="{!v.size}">
                 <div class="slds-popover__body">{!v.tooltip}</div>
             </div>
         </aura:if>

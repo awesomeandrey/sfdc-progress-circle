@@ -3,8 +3,7 @@
         const componentMarkup = this.superRender(),
             container = componentMarkup[0],
             progressRing = helper.createProgressRing({
-                xmlns: "http://www.w3.org/2000/svg",
-                circleSize: component.get("v.size"),
+                size: component.get("v.size"),
                 progress: Math.round(component.get("v.progress")),
                 variant: component.get("v.variant")
             });
@@ -17,8 +16,7 @@
         if (!!container) {
             // Progress ring SVG element goes second after tooltip (if present);
             const progressRing = helper.createProgressRing({
-                    xmlns: "http://www.w3.org/2000/svg",
-                    circleSize: component.get("v.size"),
+                    size: component.get("v.size"),
                     progress: Math.round(component.get("v.progress")),
                     variant: component.get("v.variant")
                 }),

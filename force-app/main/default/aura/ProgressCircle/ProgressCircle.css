@@ -1,5 +1,4 @@
-.THIS {
-}
+/* Common styles*/
 
 .THIS svg:hover {
     cursor: pointer;
@@ -17,7 +16,6 @@
 
 .THIS .circle__progress {
     stroke-dasharray: 360;
-    /*stroke-dashoffset: -20%;*/
     stroke: #cccccc;
 }
 
@@ -29,20 +27,90 @@
     stroke: #1589ee;
 }
 
-.THIS.container {
+.THIS.progress-circle-container {
     position: relative;
     display: inline-block;
 }
 
-.THIS.container .tooltip {
+.THIS.progress-circle-container .tooltip {
     visibility: hidden;
     position: absolute;
     z-index: 1;
     width: max-content;
-    top: -2.6rem;
-    left: 0.25rem;
 }
 
-.THIS.container:hover .tooltip {
+.THIS.progress-circle-container:hover .tooltip {
     visibility: visible;
+}
+
+/* Stylization for 'SMALL' variant */
+
+.THIS .tooltip[data-size="small"] {
+    top: -90%;
+    left: 0%;
+}
+
+.THIS svg.small {
+    width: 3rem;
+    height: 3rem;
+}
+
+.THIS svg.small circle.circle__default, .THIS svg.small circle.circle__progress {
+    cx: 1.5rem; /* 0.5 from parent SVG element width */
+    cy: 1.5rem; /* 0.5 from parent SVG element width */
+    r: 1.05rem; /* 0.35 from parent SVG element width */
+    stroke-width: 0.18rem; /* 0.06 from parent SVG element width */
+    fill: none;
+}
+
+.THIS svg.small text {
+    font-size: 0.7rem; /* 0.23 from parent SVG element width*/
+}
+
+/* Stylization for 'MEDIUM' variant */
+
+.THIS .tooltip[data-size="medium"] {
+    top: -65%;
+    left: 11.5%;
+}
+
+.THIS svg.medium {
+    width: 4rem;
+    height: 4rem;
+}
+
+.THIS svg.medium circle.circle__default, .THIS svg.medium circle.circle__progress {
+    cx: 2rem;
+    cy: 2rem;
+    r: 1.4rem;
+    stroke-width: 0.24rem;
+    fill: none;
+}
+
+.THIS svg.medium text {
+    font-size: 0.9rem;
+}
+
+/* Stylization for 'LARGE' variant */
+
+.THIS .tooltip[data-size="large"] {
+    top: -50%;
+    left: 20%;
+}
+
+.THIS svg.large {
+    width: 5rem;
+    height: 5rem;
+}
+
+.THIS svg.large circle.circle__default, .THIS svg.large circle.circle__progress {
+    cx: 2.5rem;
+    cy: 2.5rem;
+    r: 1.75rem;
+    stroke-width: 0.3rem;
+    fill: none;
+}
+
+.THIS svg.large text {
+    font-size: 1.15rem;
 }
