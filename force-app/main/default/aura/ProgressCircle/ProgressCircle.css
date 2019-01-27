@@ -1,0 +1,48 @@
+.THIS {
+}
+
+.THIS svg:hover {
+    cursor: pointer;
+}
+
+.THIS .progress-circle {
+    transform: rotate(-90deg);
+    transform-origin: center center;
+}
+
+.THIS .circle__default {
+    stroke: #1589ee;
+    fill: #f3f2f2;
+}
+
+.THIS .circle__progress {
+    stroke-dasharray: 360;
+    /*stroke-dashoffset: -20%;*/
+    stroke: #cccccc;
+}
+
+.THIS .success {
+    stroke: #4bca81;;
+}
+
+.THIS .brand {
+    stroke: #1589ee;
+}
+
+.THIS.container {
+    position: relative;
+    display: inline-block;
+}
+
+.THIS.container .tooltip {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    width: max-content;
+    top: -2.6rem;
+    left: 0.25rem;
+}
+
+.THIS.container:hover .tooltip {
+    visibility: visible;
+}
