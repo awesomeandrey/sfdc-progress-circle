@@ -6,13 +6,34 @@
             </div>
             <lightning:layout pullToBoundary="medium">
                 <lightning:layoutItem flexibility="auto" padding="around-large" class="slds-align_absolute-center">
-                    <c:ProgressCircle progress="10" size="small" tooltip="This is small version."/>
+                    <c:ProgressCircle progress="25" size="small" tooltip="This is small version."/>
+                    <br/>
+                    <c:ProgressCircle progress="50" size="small" tooltip="This is small version."/>
+                    <br/>
+                    <c:ProgressCircle progress="75" size="small" tooltip="This is small version."/>
+                    <br/>
+                    <c:ProgressCircle progress="95" size="small" tooltip="This is small version."/>
+                    <br/>
                 </lightning:layoutItem>
                 <lightning:layoutItem flexibility="auto" padding="around-large" class="slds-align_absolute-center">
-                    <c:ProgressCircle progress="35" size="medium" tooltip="This is medium version." variant="success"/>
+                    <c:ProgressCircle progress="25" size="medium" tooltip="This is medium version." variant="success"/>
+                    <br/>
+                    <c:ProgressCircle progress="50" size="medium" tooltip="This is medium version." variant="success"/>
+                    <br/>
+                    <c:ProgressCircle progress="75" size="medium" tooltip="This is medium version." variant="success"/>
+                    <br/>
+                    <c:ProgressCircle progress="95" size="medium" tooltip="This is medium version." variant="success"/>
+                    <br/>
                 </lightning:layoutItem>
                 <lightning:layoutItem flexibility="auto" padding="around-large" class="slds-align_absolute-center">
-                    <c:ProgressCircle progress="80" size="large" tooltip="This is large version."/>
+                    <c:ProgressCircle progress="25" size="large" tooltip="This is large version."/>
+                    <br/>
+                    <c:ProgressCircle progress="50" size="large" tooltip="This is large version."/>
+                    <br/>
+                    <c:ProgressCircle progress="75" size="large" tooltip="This is large version."/>
+                    <br/>
+                    <c:ProgressCircle progress="95" size="large" tooltip="This is large version."/>
+                    <br/>
                 </lightning:layoutItem>
             </lightning:layout>
         </div>
