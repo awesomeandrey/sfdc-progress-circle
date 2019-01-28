@@ -15,6 +15,6 @@
                     <c:ProgressCircle progress="80" size="large" tooltip="This is large version."/>
                 </lightning:layoutItem>
             </lightning:layout>
-         </div>
+        </div>
     </div>
 </aura:component>	

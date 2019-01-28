@@ -1,20 +1,20 @@
-<aura:component description="ProgressCircle">
+<aura:component description="Progress indicator with percentage mark">
 
-    <aura:attribute name="progress" 
-                    type="Decimal" 
-                    default="0" 
+    <aura:attribute name="progress"
+                    type="Decimal"
+                    default="0"
                     required="true"
                     description="Progress value."/>
-    <aura:attribute name="variant" 
-                    type="String" 
+    <aura:attribute name="variant"
+                    type="String"
                     default="brand"
                     description="Circle stroke color theme. Allowed options: brand, success."/>
-    <aura:attribute name="size" 
-                    type="String" 
+    <aura:attribute name="size"
+                    type="String"
                     default="medium"
                     description="Component size. Allowed options: small, medium, large."/>
-    <aura:attribute name="tooltip" 
-                    type="String" 
+    <aura:attribute name="tooltip"
+                    type="String"
                     default=""
                     description="Tooltip text."/>
 

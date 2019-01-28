@@ -1,5 +1,5 @@
 ({
-    xmlns:"http://www.w3.org/2000/svg",
+    xmlns: "http://www.w3.org/2000/svg",
     createProgressRing: function (params) {
         const {size, progress, variant = "brand"} = params,
             svgElement = this.createSvg(size);
@@ -33,7 +33,7 @@
     createCircle: function (className, size) {
         const circle = document.createElementNS(this.xmlns, "circle");
         circle.setAttributeNS(null, "class", className || "");
-        return circle; 
+        return circle;
     },
     createText: function (val) {
         const text = document.createElementNS(this.xmlns, "text");
