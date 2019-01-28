@@ -1,8 +1,12 @@
 {
-    "orgName": "CT Company",
-    "edition": "Developer",
-    "orgPreferences" : {
-        "enabled": ["S1DesktopEnabled"],
-        "disabled": ["S1EncryptedStoragePref2"]
-    }
+  "orgName": "Progress Circle Demo Company",
+  "edition": "Developer",
+  "orgPreferences": {
+    "enabled": [
+      "S1DesktopEnabled"
+    ],
+    "disabled": [
+      "S1EncryptedStoragePref2"
+    ]
+  }
 }

@@ -1,4 +1,4 @@
-# 'ProgressCircle' component for SF LEX
+# <u>ProgressCircle</u> component for SF LEX
 
 #### Output screen shots:<br/>
 ![example1](https://user-images.githubusercontent.com/19519479/48674445-114ff380-eb55-11e8-9c29-aa222c9908a0.PNG)
@@ -10,3 +10,10 @@
     <aura:set attribute="tooltip">Tooltip text</aura:set>
 </c:ProgressCircle>
 ```
+#### Testing on scratch org 
+```
+sfdx force:org:create -f config/project-scratch-def.json -a <ScratchOrgName>
+sfdx force:source:push -u <ScratchOrgName>
+sfdx force:org:open -u <ScratchOrgName>
+```
+Navigate to tab "<i>Progress Circle Demo</i>" - Voila!
