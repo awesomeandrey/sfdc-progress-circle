@@ -6,11 +6,12 @@
             svgElement = this.createSvg(circleParams.dimension);
 
         // Circle group;
-        const circleGroup = this.createGroupTag("progress-circle"),
-            defaultCircle = this.createCircle(["circle__default", variant].join(" "), circleParams),
-            progressCircle = this.createCircle("circle__progress", circleParams);
-        progressCircle.setAttributeNS(null, "stroke-dashoffset", this.computeCircleDashOffset(progress, circleParams.r));
-        circleGroup.appendChild(defaultCircle);
+        const circleGroup = this.createGroupTag("circles__group"),
+            backgroundCircle = this.createCircle(["circle__background", variant].join(" "), circleParams),
+            progressCircle = this.createCircle("circle__progress", circleParams),
+            offset = this.computeCircleDashOffset(progress, circleParams.r);
+        progressCircle.setAttributeNS(null, "stroke-dashoffset", offset);
+        circleGroup.appendChild(backgroundCircle);
         circleGroup.appendChild(progressCircle);
 
         // Legend group;
@@ -54,7 +55,7 @@
         return text;
     },
     roundNumber: function (num) {
-        return Number.parseFloat(num).toFixed(3);
+        return Number.parseFloat(num).toFixed(5);
     },
     toRem: function (num) {
         return this.roundNumber(num) + "rem";
@@ -84,10 +85,7 @@
             fill: "none",
             legendParams: {
                 fontSize: rounder(dimension * 0.23), // 0.23 from dimension;
-                x: "50%",
-                y: "50%",
-                textAnchor: "middle",
-                dy: "0.32em"
+                x: "50%", y: "50%", textAnchor: "middle", dy: "0.32em"
             }
         });
     },

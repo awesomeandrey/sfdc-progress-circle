@@ -4,13 +4,12 @@
     cursor: pointer;
 }
 
-.THIS .progress-circle {
+.THIS .circles__group {
     transform: rotate(-90deg);
     transform-origin: center center;
 }
 
-.THIS .circle__default {
-    stroke: #1589ee;
+.THIS .circle__background {
     fill: #f3f2f2;
 }
 
